@@ -1,0 +1,232 @@
+.card {
+    width: 900px;
+    border-radius: 70px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.cardyy{
+    width: 900px;
+    border-radius: 70px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.top-sectionyy {
+    margin-top: 2%;
+    margin-bottom: 7%;
+    display: flex;
+    width: 100%;
+    height: 50%;
+    position: relative;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column; /* Размещаем карточки вертикально */
+    align-items: center; /* Центрируем карточки по горизонтали */
+    margin-top: 20px; /* Добавляем отступ между карточками */
+}
+
+.image-block .caption {
+    padding-right: 30px; 
+    font: 500 2em/1.29 DM Sans;
+    margin-left: 1.2%;
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    left: 38px; /* отступ от левого края карточки */
+}
+
+.top-section {
+    display: flex;
+    width: 100%;
+    height: 50%;
+    position: relative;
+}
+.image-block {
+    padding-left: 77px;
+    padding-top: 20px;
+    width: auto;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+.image-block img {
+    width: 300px;
+    height: auto;
+}
+.image-block .caption {
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    left: 38px; /* отступ от левого края карточки */
+}
+.text-block {
+    padding-top: 110px;
+    padding-right: 50px; /* отступ от правого края карточки */
+    padding-left: 88px; /* отступ между картинкой и блоком текста */
+    box-sizing: border-box;
+    flex-grow: 1;
+}
+.text-block h1, .text-block h2, .text-block p {
+    margin: 0;
+    text-align: left;
+}
+.text-block h1 {
+    color: #CD017C;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 17px; /* отступ между Product Design и Pictures of goods on Marketplaces */
+}
+.text-block h2 {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 17px; /* отступ между Pictures of goods on Marketplaces и "Selling" infographics of your product */
+}
+.text-block p {
+    color: #a5a5a5;
+    font-size: 24px;
+    margin-bottom: 19px; /* убираем отступ между "Selling" infographics of your product и кнопкой */
+}
+.button {
+    display: inline-block;
+    width: 170px;
+    height: 60px;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 60px;
+    text-decoration: none;
+    border-radius: 19px; /* скругление у кнопки */
+    margin-top: 0; /* убираем отступ сверху у кнопки */
+}
+.button-container {
+    margin-left: 0; /* прижимаем кнопку к левому краю */
+}
+.bottom-section {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between; /* равномерное распределение элементов */
+    align-items: center;
+    padding: 0 58px; /* отступы слева и справа */
+    box-sizing: border-box;
+}
+.bottom-section img {
+    height: auto;
+}
+
+@media only screen and (max-width: 900px) {
+    .card {
+        width: 100%; /* Ширина на мобильных устройствах занимает всю доступную ширину */
+        height: auto; /* Высота автоматически настраивается по содержимому */
+        border-radius: 20px; /* Убираем скругление углов */
+        padding: 10px; /* Уменьшаем отступы вокруг карточки */
+    }
+
+    .top-section {
+        flex-direction: column; /* Столбцовая ориентация для блоков в верхней секции */
+        height: auto; /* Автоматическая высота */
+    }
+
+    .image-block {
+        padding: 20px 0; /* Уменьшаем отступы внутри блока с изображением */
+        text-align: center; /* Выравниваем изображение по центру */
+    }
+
+    .image-block .caption {
+        position: static; /* Отменяем абсолютное позиционирование заголовка */
+        font-size: 24px; /* Уменьшаем размер шрифта заголовка */
+        margin-top: 10px; /* Добавляем небольшой отступ сверху */
+    }
+
+    .text-block {
+        padding: 20px 0; /* Уменьшаем отступы внутри блока с текстом */
+        text-align: center; /* Выравниваем текст по центру */
+    }
+
+    .text-block h1 {
+        font-size: 20px; /* Уменьшаем размер шрифта заголовка */
+        margin-bottom: 10px; /* Уменьшаем отступ между заголовками */
+    }
+
+    .text-block h2 {
+        font-size: 30px; /* Уменьшаем размер шрифта второго заголовка */
+        margin-bottom: 10px; /* Уменьшаем отступ между заголовками */
+    }
+
+    .text-block p {
+        font-size: 18px; /* Уменьшаем размер шрифта абзаца */
+        margin-bottom: 15px; /* Уменьшаем отступ между абзацем и кнопкой */
+    }
+
+    .button-container {
+        text-align: center; /* Выравниваем кнопку по центру */
+        margin-left: 0; /* Убираем отступ слева */
+    }
+
+    .bottom-section {
+        flex-direction: column; /* Столбцовая ориентация для блоков в нижней секции */
+        align-items: center; /* Выравниваем элементы по центру */
+        padding: 0; /* Убираем отступы по бокам */
+    }
+
+    .bottom-section img {
+        width: 100%; /* Изображения занимают всю ширину контейнера */
+        max-width: 300px; /* Максимальная ширина изображений */
+        height: auto; /* Автоматическая высота */
+        margin-bottom: 20px; /* Добавляем отступ между изображениями */
+    }
+
+    .bottom-section {
+        flex-direction: row; /* Горизонтальное расположение элементов */
+        justify-content: space-between; /* Равномерное распределение по горизонтали */
+        align-items: center; /* Выравнивание по центру по вертикали */
+        padding: 0 20px; /* Уменьшаем отступы по бокам */
+        overflow-x: auto;
+    }
+
+    .bottom-section img {
+        width: auto; /* Автоматическая ширина изображений */
+        max-width: 40%; /* Максимальная ширина изображений */
+        height: auto; /* Автоматическая высота */
+        margin-bottom: 0; /* Убираем отступ снизу */
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .image-block img {
+        width: 230px; /* Уменьшаем ширину изображения на узких экранах */
+    }
+
+    .bottom-section {
+        flex-direction: row; /* Горизонтальное расположение элементов */
+        justify-content: space-between; /* Равномерное распределение по горизонтали */
+        align-items: center; /* Выравнивание по центру по вертикали */
+        padding: 0 20px; /* Уменьшаем отступы по бокам */
+    }
+
+    .bottom-section img {
+        width: auto; /* Автоматическая ширина изображений */
+        max-width: 40%; /* Максимальная ширина изображений */
+        height: auto; /* Автоматическая высота */
+        margin-bottom: 0; /* Убираем отступ снизу */
+    }
+}
