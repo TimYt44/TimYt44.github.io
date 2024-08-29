@@ -1,0 +1,285 @@
+body {
+    width: 100%;
+    animation: fadeIn 1s ease-in;
+    background-color: #141414;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+
+
+.contentBox {
+  border-radius: 14px;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  margin: 0px auto;
+  width: 95%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(42px);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px 0px, rgba(0, 0, 0, 0.5) 0px 5px 25px 0px;
+  opacity: 100%;
+  will-change: auto;
+}
+  
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 18px auto;
+  width: 88.77%;
+  position: relative;
+}
+
+@media (max-width: 991px) {
+  .header {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.headerContent{
+  display: flex;
+  gap: 5%;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+@media (max-width: 990px) {
+  .navigation {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+}
+
+@media (max-width: 383px) {
+  .navigation {
+    column-gap: 8px;
+  }
+}
+
+.logoImage {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@media (max-width: 991px) {
+  .websiteTitle {
+    font-size: 25px;
+    margin-top: 0px;
+  }
+  .logoImage {
+    width: 39px;
+    height: 39px;
+  }
+}
+
+
+
+@media (max-width: 479px) {
+  .websiteTitle {
+    margin-top: 7px;
+    font-size: 20px;
+  }
+}
+
+.websiteTitle {
+  font: 700 36px/1.3 "DM Sans", Helvetica, Arial, serif;
+  color: white;
+}
+
+.burgerMenu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.burgerMenu span {
+  height: 3px;
+  width: 25px;
+  background-color: white;
+  margin: 4px 0;
+  border-radius: 2px;
+}
+
+@media (max-width: 990px) {
+  .burgerMenu {
+    display: flex;
+  }
+}
+
+
+.navLink {
+  font: 700 20px/1.3 "DM Sans", Helvetica, Arial, serif;
+  color: #b7b7b7;
+}
+
+
+.navLink:hover {
+  color: #FB4552;
+  cursor: pointer;
+}
+
+@media (max-width: 991px) {
+  .navLink {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 479px) {
+  .navLink {
+    font-size: 16px;
+  }
+}
+
+
+
+.SignsSection {  
+  display: grid;
+  gap: 10px;
+}
+
+.SignsContent {  
+  margin: 330px auto 0px;
+  display: flex;
+  justify-content: center
+}
+
+.SignsTitle {
+  font: 600 72px/1.3 "DM Sans", Helvetica, Arial, serif;
+  color: #FB4552;
+}
+
+.SignsTitleTwo {
+  font: 600 72px/1.3 "DM Sans", Helvetica, Arial, serif;
+  color: white;
+}
+
+.SignsDescription {
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 0px 0px 0px;
+}
+.SignHome {
+  cursor: pointer;
+  font: 400 20px/1.3 "DM Sans", Helvetica, Arial, serif;
+  color: white;
+}
+.SignHome:hover {
+  color: #FB4552;
+}
+
+.RoundElement {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+
+.card-container {
+  width: 80%;
+  margin: 250px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Центрирование карточек */
+}
+
+.card {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 8px;
+  margin: 20px; /* Установлено для отступа между карточками */
+  width: calc(50% - 40px); /* Два столбца с учетом отступов */
+}
+
+.card img {
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card h3 {
+  font: 600 20px/1.3 "DM Sans", Helvetica, Arial, serif;
+  color: #FB4552;
+  padding: 10px;
+  text-align: center;
+}
+.card h2 {
+  font: 600 20px/1.3 "DM Sans", Helvetica, Arial, serif;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .card {
+      width: 100%; /* Один столбец на мобильных устройствах */
+  }
+}
+
+.card-image{
+  animation: FadeIn 0.3s ease-in forwards;
+  color: #000;
+  opacity: 1;
+}
+
+.card:hover{
+  .card-image{
+    animation: Blacker 0.3s ease-in;
+    opacity: 0.5;
+  }
+}
+
+@keyframes Blacker {
+  from {
+      opacity: 1;
+  }
+  to {
+      opacity: 0.5;
+  }
+}
+
+@keyframes FadeIn {
+  from {
+      opacity: 0.5;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+
+.cardhopeup{
+  width: 90px !important;
+  height: 90px;
+  position: absolute;
+  top: 36%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover .cardhopeup {
+  opacity: 1;
+}
